@@ -1,0 +1,8 @@
+.image{
+    -fx-background-image:url("file:src/view/shelter.jpg");
+
+}
+
+.body{
+    -fx-background-color:white;
+}

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Registration">
+    <children>
+        <Label alignment="CENTER" prefHeight="65.0" prefWidth="601.0" text="AnimalShelter">
+            <font>
+                <Font name="System Bold Italic" size="40.0" />
+            </font>
+        </Label>
+        <Button fx:id="homeBtn" layoutX="153.0" layoutY="65.0" mnemonicParsing="false" onAction="#changeScene" prefHeight="25.0" prefWidth="92.0" text="Home" />
+        <Button fx:id="registrationBtn" layoutX="255.0" layoutY="65.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="92.0" text="Registration" />
+        <Button fx:id="loginBtn" layoutX="357.0" layoutY="65.0" mnemonicParsing="false" onAction="#changeSceneLogin" prefHeight="25.0" prefWidth="92.0" text="Login" />
+      <Pane layoutX="101.0" layoutY="158.0" prefHeight="238.0" prefWidth="400.0">
+         <children>
+            <Label layoutX="14.0" layoutY="14.0" prefHeight="17.0" prefWidth="92.0" text="Firstname" />
+            <TextField fx:id="firstnameTxt" layoutX="106.0" layoutY="10.0" prefHeight="25.0" prefWidth="280.0" />
+            <Label layoutX="14.0" layoutY="50.0" prefHeight="17.0" prefWidth="92.0" text="Lastname" />
+            <TextField fx:id="lastnameTxt" layoutX="106.0" layoutY="46.0" prefHeight="25.0" prefWidth="280.0" />
+            <TextField fx:id="emailTxt" layoutX="106.0" layoutY="82.0" prefHeight="25.0" prefWidth="280.0" />
+            <PasswordField fx:id="passwordTxt" layoutX="106.0" layoutY="119.0" prefHeight="25.0" prefWidth="280.0" />
+            <Label layoutX="14.0" layoutY="86.0" prefHeight="17.0" prefWidth="92.0" text="E-mail" />
+            <Label layoutX="14.0" layoutY="123.0" prefHeight="17.0" prefWidth="92.0" text="Password" />
+            <Button fx:id="registerBtn" layoutX="294.0" layoutY="168.0" mnemonicParsing="false" onAction="#registration" prefHeight="25.0" prefWidth="92.0" text="Register" />
+            <Label fx:id="uspjehLbl" layoutX="106.0" layoutY="151.0" prefHeight="17.0" prefWidth="188.0" text="You are registered in the system" textFill="#f50707" visible="false">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="greskaLbl" layoutX="106.0" layoutY="151.0" prefHeight="17.0" prefWidth="188.0" text="Please enter valid informations" textFill="#f20606" visible="false">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+    </children>
+
+</AnchorPane>

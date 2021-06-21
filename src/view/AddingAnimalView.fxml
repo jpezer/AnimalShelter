@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane prefHeight="469.0" prefWidth="667.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddingAnimalView">
+    <children>
+        <Label alignment="CENTER" prefHeight="65.0" prefWidth="667.0" text="AnimalShelter">
+            <font>
+                <Font name="System Bold Italic" size="40.0" />
+            </font>
+        </Label>
+        <TableView fx:id="tableView" layoutX="14.0" layoutY="102.0" prefHeight="316.0" prefWidth="479.0">
+            <columns>
+                <TableColumn fx:id="nameTblCol" prefWidth="75.0" text="Name" />
+                <TableColumn fx:id="speciesTblCol" prefWidth="75.0" text="Species" />
+                <TableColumn fx:id="breedTblCol" prefWidth="75.0" text="Breed" />
+                <TableColumn fx:id="genderTblCol" prefWidth="75.0" text="Gender" />
+                <TableColumn fx:id="ageTblCol" prefWidth="75.0" text="Age" />
+            </columns>
+        </TableView>
+      <Label fx:id="loggedUserLbl" alignment="CENTER_RIGHT" layoutX="342.0" layoutY="65.0" prefHeight="32.0" prefWidth="151.0" text="Label">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Button fx:id="logoutBtn" layoutX="563.0" layoutY="69.0" mnemonicParsing="false" onAction="#logOut" prefHeight="25.0" prefWidth="90.0" text="Logout" />
+      <TextField fx:id="nameTxt" layoutX="504.0" layoutY="129.0" promptText="Name" />
+      <TextField fx:id="speciesTxt" layoutX="504.0" layoutY="164.0" promptText="Species" />
+      <TextField fx:id="breedTxt" layoutX="504.0" layoutY="200.0" promptText="Breed" />
+      <TextField fx:id="genderTxt" layoutX="504.0" layoutY="235.0" promptText="Gender" />
+      <TextField fx:id="ageTxt" layoutX="504.0" layoutY="270.0" promptText="Age" />
+      <Button fx:id="addAnimalBtn" layoutX="504.0" layoutY="423.0" mnemonicParsing="false" onAction="#addAnimalToDatabase" prefHeight="25.0" prefWidth="149.0" text="Add Animal" />
+      <Button fx:id="deleteAnimalBtn" layoutX="343.0" layoutY="423.0" mnemonicParsing="false" onAction="#deleteAnimalFromDatabase" prefHeight="25.0" prefWidth="149.0" text="Delete animal" />
+    </children>
+
+</AnchorPane>
